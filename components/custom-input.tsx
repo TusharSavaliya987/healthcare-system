@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Control } from "react-hook-form";
+import { Control, FieldValues, FieldPath } from "react-hook-form";
 import {
   FormControl,
   FormField,
@@ -21,9 +21,10 @@ import { RadioGroup, RadioGroupItem } from "./ui/radio-group";
 import { Label } from "./ui/label";
 import { Switch } from "./ui/switch";
 
-interface InputProps {
+interface InputProps<T extends FieldValues = any> {
   type: "input" | "select" | "checkbox" | "switch" | "radio" | "textarea";
-  control: Control<any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  control: Control<any, any, any>;
   name: string;
   label?: string;
   placeholder?: string;

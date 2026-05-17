@@ -101,14 +101,14 @@ export const AddVitalSigns = ({
               <div className="flex items-center gap-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="body_temperature"
                   label="Body Temperature (°C)"
                   placeholder="eg.:37.5"
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="heartRate"
                   placeholder="eg: 54-123"
                   label="Heart Rate (BPM)"
@@ -118,14 +118,14 @@ export const AddVitalSigns = ({
               <div className="flex items-center gap-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="systolic"
                   placeholder="eg: 120"
                   label="Systolic BP"
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="diastolic"
                   placeholder="eg: 80"
                   label="Diastolic BP"
@@ -135,14 +135,14 @@ export const AddVitalSigns = ({
               <div className="flex items-center gap-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="weight"
                   placeholder="eg.: 80"
                   label="Weight (Kg)"
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="height"
                   placeholder="eg.: 175"
                   label="Height (Cm)"
@@ -152,14 +152,14 @@ export const AddVitalSigns = ({
               <div className="flex items-center gap-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="respiratory_rate"
                   placeholder="Optional"
                   label="Respiratory Rate"
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="oxygen_saturation"
                   placeholder="Optional"
                   label="Oxygen Saturation"

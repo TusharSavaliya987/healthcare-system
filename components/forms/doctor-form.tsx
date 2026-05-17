@@ -131,7 +131,7 @@ export const DoctorForm = () => {
               <CustomInput
                 type="radio"
                 selectList={TYPES}
-                control={form.control}
+                control={form.control as any}
                 name="type"
                 label="Type"
                 placeholder=""
@@ -140,7 +140,7 @@ export const DoctorForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="name"
                 placeholder="Doctor's name"
                 label="Full Name"
@@ -149,7 +149,7 @@ export const DoctorForm = () => {
               <div className="flex items-center gap-2">
                 <CustomInput
                   type="select"
-                  control={form.control}
+                  control={form.control as any}
                   name="specialization"
                   placeholder="Select specialization"
                   label="Specialization"
@@ -157,7 +157,7 @@ export const DoctorForm = () => {
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="department"
                   placeholder="OPD"
                   label="Department"
@@ -166,7 +166,7 @@ export const DoctorForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="license_number"
                 placeholder="License Number"
                 label="License Number"
@@ -174,7 +174,7 @@ export const DoctorForm = () => {
               <div className="flex items-center gap-2">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="email"
                   placeholder="john@example.com"
                   label="Email Address"
@@ -182,7 +182,7 @@ export const DoctorForm = () => {
 
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="phone"
                   placeholder="9225600735"
                   label="Contact Number"
@@ -191,7 +191,7 @@ export const DoctorForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="address"
                 placeholder="1479 Street, Apt 1839-G, NY"
                 label="Address"
@@ -199,7 +199,7 @@ export const DoctorForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="password"
                 placeholder=""
                 label="Password"

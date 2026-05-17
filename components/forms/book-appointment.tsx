@@ -141,7 +141,7 @@ export const BookAppointment = ({
                 <CustomInput
                   type="select"
                   selectList={TYPES}
-                  control={form.control}
+                  control={form.control as any}
                   name="type"
                   label="Appointment Type"
                   placeholder="Select a appointment type"
@@ -194,7 +194,7 @@ export const BookAppointment = ({
                 <div className="flex items-center gap-2">
                   <CustomInput
                     type="input"
-                    control={form.control}
+                    control={form.control as any}
                     name="appointment_date"
                     placeholder=""
                     label="Date"
@@ -202,7 +202,7 @@ export const BookAppointment = ({
                   />
                   <CustomInput
                     type="select"
-                    control={form.control}
+                    control={form.control as any}
                     name="time"
                     placeholder="Select time"
                     label="Time"
@@ -212,7 +212,7 @@ export const BookAppointment = ({
 
                 <CustomInput
                   type="textarea"
-                  control={form.control}
+                  control={form.control as any}
                   name="note"
                   placeholder="Additional note"
                   label="Additional Note"

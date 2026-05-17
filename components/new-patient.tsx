@@ -149,14 +149,14 @@ export const NewPatient = ({ data, type }: DataProps) => {
               <div className="flex flex-col lg:flex-row  gap-y-6 items-center gap-2 md:gap-x-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="first_name"
                   placeholder="John"
                   label="First Name"
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="last_name"
                   placeholder="Doe"
                   label="Last Name"
@@ -164,7 +164,7 @@ export const NewPatient = ({ data, type }: DataProps) => {
               </div>
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="email"
                 placeholder="john@example.com"
                 label="Email Address"
@@ -172,7 +172,7 @@ export const NewPatient = ({ data, type }: DataProps) => {
               <div className="flex flex-col lg:flex-row  gap-y-6 items-center gap-2 md:gap-x-4">
                 <CustomInput
                   type="select"
-                  control={form.control}
+                  control={form.control as any}
                   name="gender"
                   placeholder="Select gender"
                   label="Gender"
@@ -180,7 +180,7 @@ export const NewPatient = ({ data, type }: DataProps) => {
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="date_of_birth"
                   placeholder="01-05-2000"
                   label="Date of Birth"
@@ -190,14 +190,14 @@ export const NewPatient = ({ data, type }: DataProps) => {
               <div className="flex flex-col lg:flex-row  gap-y-6 items-center gap-2 md:gap-x-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="phone"
                   placeholder="9225600735"
                   label="Contact Number"
                 />
                 <CustomInput
                   type="select"
-                  control={form.control}
+                  control={form.control as any}
                   name="marital_status"
                   placeholder="Select marital status"
                   label="Marital Status"
@@ -206,7 +206,7 @@ export const NewPatient = ({ data, type }: DataProps) => {
               </div>
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="address"
                 placeholder="1479 Street, Apt 1839-G, NY"
                 label="Address"
@@ -217,21 +217,21 @@ export const NewPatient = ({ data, type }: DataProps) => {
               <h3 className="text-lg font-semibold">Family Information</h3>
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="emergency_contact_name"
                 placeholder="Anne Smith"
                 label="Emergency contact name"
               />
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="emergency_contact_number"
                 placeholder="675444467"
                 label="Emergency contact"
               />
               <CustomInput
                 type="select"
-                control={form.control}
+                control={form.control as any}
                 name="relation"
                 placeholder="Select relation with contact person"
                 label="Relation"
@@ -244,28 +244,28 @@ export const NewPatient = ({ data, type }: DataProps) => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="blood_group"
                 placeholder="A+"
                 label="Blood group"
               />
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="allergies"
                 placeholder="Milk"
                 label="Allergies"
               />
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="medical_conditions"
                 placeholder="Medical conditions"
                 label="Medical conditions"
               />
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="medical_history"
                 placeholder="Medical history"
                 label="Medical history"
@@ -273,14 +273,14 @@ export const NewPatient = ({ data, type }: DataProps) => {
               <div className="flex flex-col lg:flex-row  gap-y-6 items-center gap-2 md:gap-4">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="insurance_provider"
                   placeholder="Insurance provider"
                   label="Insurance provider"
                 />{" "}
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="insurance_number"
                   placeholder="Insurance number"
                   label="Insurance number"
@@ -302,11 +302,11 @@ export const NewPatient = ({ data, type }: DataProps) => {
                     be shared with, and my rights regarding access,
                     correction, and deletion of my data."
                     type="checkbox"
-                    control={form.control}
+                    control={form.control as any}
                   />
 
                   <CustomInput
-                    control={form.control}
+                    control={form.control as any}
                     type="checkbox"
                     name="service_consent"
                     label=" Terms of Service Agreement"
@@ -319,7 +319,7 @@ export const NewPatient = ({ data, type }: DataProps) => {
                   />
 
                   <CustomInput
-                    control={form.control}
+                    control={form.control as any}
                     type="checkbox"
                     name="medical_consent"
                     label="Informed Consent for Medical Treatment"

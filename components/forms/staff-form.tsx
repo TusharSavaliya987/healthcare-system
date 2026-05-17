@@ -90,7 +90,7 @@ export const StaffForm = () => {
               <CustomInput
                 type="radio"
                 selectList={TYPES}
-                control={form.control}
+                control={form.control as any}
                 name="role"
                 label="Type"
                 placeholder=""
@@ -99,7 +99,7 @@ export const StaffForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="name"
                 placeholder="Staff name"
                 label="Full Name"
@@ -108,7 +108,7 @@ export const StaffForm = () => {
               <div className="flex items-center gap-2">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="email"
                   placeholder="john@example.com"
                   label="Email Address"
@@ -116,7 +116,7 @@ export const StaffForm = () => {
 
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="phone"
                   placeholder="9225600735"
                   label="Contact Number"
@@ -125,14 +125,14 @@ export const StaffForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="license_number"
                 placeholder="License Number"
                 label="License Number"
               />
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="department"
                 placeholder="Children's ward"
                 label="Department"
@@ -140,7 +140,7 @@ export const StaffForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="address"
                 placeholder="1479 Street, Apt 1839-G, NY"
                 label="Address"
@@ -148,7 +148,7 @@ export const StaffForm = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="password"
                 placeholder=""
                 label="Password"

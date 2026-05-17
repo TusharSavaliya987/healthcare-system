@@ -126,7 +126,7 @@ export const AddBills = ({ id, appId, servicesData }: DataProps) => {
               <div className="flex items-center gap-2">
                 <CustomInput
                   type="select"
-                  control={form.control}
+                  control={form.control as any}
                   name="service_id"
                   placeholder="Select service"
                   label="Service Name"
@@ -134,7 +134,7 @@ export const AddBills = ({ id, appId, servicesData }: DataProps) => {
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="unit_cost"
                   placeholder=""
                   label="Unit Cost"
@@ -144,14 +144,14 @@ export const AddBills = ({ id, appId, servicesData }: DataProps) => {
               <div className="flex items-center gap-2">
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="quantity"
                   placeholder="Enter quantity"
                   label="Quantity"
                 />
                 <CustomInput
                   type="input"
-                  control={form.control}
+                  control={form.control as any}
                   name="total_cost"
                   placeholder="0.00"
                   label="Total Cost"
@@ -160,7 +160,7 @@ export const AddBills = ({ id, appId, servicesData }: DataProps) => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="service_date"
                 label="Service Date"
                 placeholder=""

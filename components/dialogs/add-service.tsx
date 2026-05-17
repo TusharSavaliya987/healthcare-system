@@ -82,7 +82,7 @@ export const AddService = () => {
             >
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="service_name"
                 label="Service Name"
                 placeholder=""
@@ -90,7 +90,7 @@ export const AddService = () => {
 
               <CustomInput
                 type="input"
-                control={form.control}
+                control={form.control as any}
                 name="price"
                 placeholder=""
                 label="Service Price"
@@ -98,7 +98,7 @@ export const AddService = () => {
               <div className="flex items-center gap-4">
                 <CustomInput
                   type="textarea"
-                  control={form.control}
+                  control={form.control as any}
                   name="description"
                   placeholder=""
                   label="Service Description"

@@ -14,9 +14,9 @@ import {
 } from "recharts";
 
 interface DataProps {
-  data: AppointmentsChartProps;
+  data?: AppointmentsChartProps;
 }
-export const AppointmentChart = ({ data }: DataProps) => {
+export const AppointmentChart = ({ data = [] }: DataProps) => {
   return (
     <div className="bg-white rounded-xl p-4 h-full">
       <div className="flex justify-between items-center">
